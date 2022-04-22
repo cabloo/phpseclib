@@ -4144,6 +4144,7 @@ class SSH2
                     }
                     // fall-through
                 case NET_SSH2_MSG_CHANNEL_EOF:
+                case NET_SSH2_MSG_CHANNEL_SUCCESS:
                     break;
                 default:
                     $this->disconnect_helper(NET_SSH2_DISCONNECT_BY_APPLICATION);
